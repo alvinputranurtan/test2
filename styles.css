@@ -1,100 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #110833;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1 {
-    font-size: 10vw;
-    text-align: center;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
 }
 
-h2{ 
-    font-size: 8vw;
-    text-align: center;
+.headersatu {
+    font-size: 8vh;
+    border: 1px solid #ddd;
 }
 
-.Education {
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    font-size: 7vw;
+.headerdua {
+    font-size: 5vh;
+    border: 1px solid #ddd;
+    padding-top: 3%;
 }
 
-.Kampus, .Prodi, .SMK, .Jurusan {
-    text-align: center;
+.container {
+  display: flex;            /* Flexbox aktif */
+  flex-direction: row;      /* Default: Kolom bersebelahan */
+  gap: 20px;                /* Jarak antar kolom */
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
-.Kampus {
-    margin-top: 3%;
+.column {
+  flex: 1;                  /* Kolom berbagi ruang secara merata */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-.SMK {
-    margin-top: 10%;
+.Edu {
+font-size: 5vh;
+text-align: center;
 }
 
 .Kampus, .SMK {
-    font-size: 5vw;
+  font-size: 4vh;
+  text-align: center;
+  padding-top: 5%;
 }
 
-.Prodi {
-    font-size: 4vw;
+.Prodi, .Jurusan {
+  font-size: 3vh;
+  text-align: center;
 }
 
-.Jurusan {
-    font-size: 4vw;
+.skills {
+  font-size: 5vh;
+  text-align: center;
 }
 
-.Skills {
-    font-size: 7vw;
-    text-align: center;
-    margin-top: 10%;
+
+
+.item {
+  display: flex;            /* Membuat teks dan gambar dalam satu baris */
+  align-items: center;      /* Vertikal rata tengah */
+  gap: 10px;                /* Jarak antara gambar dan teks */
+  margin-bottom: 10px;      /* Jarak antar item */
 }
 
-.NamaSkill {
-    margin-left: 15%;
-    line-height: 200%;
+.item img {
+  width: auto;              /* Ukuran gambar */
+  height: 6vh;
+  margin-left: 2%;
 }
 
-.item1 {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 4%; 
-    font-size: 4vw;
-    margin-left: 15%;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Kolom disusun ke bawah */
   }
-  
-  .item1 img {
-    width: auto; 
-    height: 7.5vw;
-    margin-left: 2.9%;
- 
-  }
-
-  .item2 {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 4%; 
-    font-size: 4vw;
-    margin-left: 15%;
-  }
-  
-  .item2 img {
-    width: auto; 
-    height: 7vw;
-    margin-left: 10%;    
-  }  
-
-  .item3 {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 4%; 
-    font-size: 4vw;
-    margin-left: 15%;
-  }
-  
-  .item3 img {
-    width: auto; 
-    height: 7vw;
-    margin-left: 10%;    
-  }  
+}
