@@ -37,8 +37,12 @@ h2{
     font-size: 5vw;
 }
 
-.Prodi, .Jurusan {
-    font-size: 5vw;
+.Prodi {
+    font-size: 4vw;
+}
+
+.Jurusan {
+    font-size: 4vw;
 }
 
 .Skills {
