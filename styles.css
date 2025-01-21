@@ -78,7 +78,7 @@ text-align: center;
   margin-left: 2%;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column; /* Kolom disusun ke bawah */
   }
