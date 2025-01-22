@@ -104,13 +104,13 @@ text-align: center;
 display: flex;
 flex-direction: column;
 padding-bottom: -10%;
-
+border: 1px solid #ddd;
 }
 
 .DescProject {
   font-size: 1.5vh;
-
-  width: 170%;
+  border: 1px solid #ddd;
+  width: 200%;
 }
 
 .BentukProject {
@@ -118,12 +118,11 @@ padding-bottom: -10%;
   justify-content: center; /* Memusatkan secara horizontal */
   align-items:flex-start;     /* Memusatkan secara vertikal */
   position: relative;
-  overflow: hidden;
   font-size: 2.5vh;
   flex: 1;
   padding: 1%;
   transition: all 0.5s ease;
-
+  border: 1px solid #ddd;
   width: 150%;
 }
 
@@ -132,7 +131,12 @@ padding-bottom: -10%;
 }
 
 .namaproject {
-  width: 170%;
+  width: 200%;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Project1 {
@@ -145,9 +149,7 @@ padding-bottom: -10%;
   opacity: 0;
   transform: translateX(0);
   transition: transform 0.5s ease, opacity 0.5s ease;
-  margin-top: -5%;
-  padding-top: -10%;
-
+  border: 1px solid #ddd;
 }
 
 .indicator-container {
@@ -181,8 +183,7 @@ padding-bottom: -10%;
 
 .Project1 img {
   width: auto;
-  height: 25vh;
-  margin-bottom: 5%;
+  width: 100%;
 }
 
 .ContainerButton {
@@ -270,15 +271,24 @@ text-align: center;
   text-decoration: underline; /* Menambahkan underline saat hover (opsional) */
 }
 
-.TulisanProject {
-  margin-top: 150%;
+.kontainerproject {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding-bottom: -100%;
+  margin-top: 15%;
+}
+
+.TulisanProject {
+  margin-bottom: -50%;
+  
 }
 
 
 .indicator-container {
-  margin-top: -1%;
+  margin-top: 0%;
 }
 
 
