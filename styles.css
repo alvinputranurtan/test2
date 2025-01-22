@@ -52,13 +52,13 @@ z-index: 0;
 }
 
 .headersatu {
-  font-size: 8vh;
+  font-size: 5vh;
   border: 1px solid #ddd;
   padding: 10px;
 }
 
 .headerdua {
-  font-size: 5vh;
+  font-size: 3vh;
   border: 1px solid #ddd;
   padding-top: 3%;
 }
@@ -80,23 +80,23 @@ border-radius: 8px;
 }
 
 .Edu {
-font-size: 5vh;
+font-size: 3.5vh;
 text-align: center;
 }
 
 .Kampus, .SMK {
-font-size: 4vh;
+font-size: 3vh;
 text-align: center;
 padding-top: 5%;
 }
 
 .Prodi, .Jurusan {
-font-size: 3vh;
+font-size: 2.5vh;
 text-align: center;
 }
 
 .skills {
-font-size: 5vh;
+font-size: 3.5vh;
 text-align: center;
 }
 
@@ -106,11 +106,12 @@ display: flex;
 align-items: center;
 gap: 10px;
 margin-bottom: 10px;
+font-size: 2.5vh;
 }
 
 .item img {
 width: auto;
-height: 6vh;
+height: 4vh;
 margin-left: 2%;
 }
 
