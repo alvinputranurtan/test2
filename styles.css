@@ -74,7 +74,7 @@ z-index: 0;
   align-items: center;
   justify-content: center;
   padding-top: 10%;
-  padding-bottom: -50%;
+  margin-bottom: -10%;
 }
 
 /* Layout container untuk bagian edukasi dan skills */
@@ -102,12 +102,13 @@ text-align: center;
 .Kampus, .SMK {
 font-size: 3vh;
 text-align: center;
-padding-top: 5%;
+padding-top: 10%;
 }
 
 .Prodi, .Jurusan {
-font-size: 2.5vh;
+font-size: 2vh;
 text-align: center;
+margin-top: -1%;
 }
 
 .skills {
@@ -308,7 +309,9 @@ text-align: center;
   margin-top: 0%;
 }
 
-
+.PageBreak1 {
+  display: none; /* Sembunyikan elemen secara default */
+}
 
 
 /* Responsif untuk tampilan kecil */
@@ -316,4 +319,20 @@ text-align: center;
 .container {
   flex-direction: column;
 }
+
+.PageBreak1 {
+  display: block; /* Tampilkan elemen */
+  text-align: center; /* Opsional: Untuk memusatkan konten */
+  margin-bottom: 10px; /* Opsional: Beri jarak dengan elemen berikutnya */
+}
+
+.PageBreak1 img {
+  width: 70vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  margin-bottom: -10%;
+}
+
 }
