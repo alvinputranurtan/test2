@@ -104,12 +104,12 @@ text-align: center;
 display: flex;
 flex-direction: column;
 padding-bottom: -10%;
-border: 1px solid #ddd;
+
 }
 
 .DescProject {
   font-size: 1.5vh;
-  border: 1px solid #ddd;
+
   width: 200%;
 }
 
@@ -122,7 +122,7 @@ border: 1px solid #ddd;
   flex: 1;
   padding: 1%;
   transition: all 0.5s ease;
-  border: 1px solid #ddd;
+
   width: 150%;
 }
 
@@ -132,7 +132,7 @@ border: 1px solid #ddd;
 
 .namaproject {
   width: 200%;
-  border: 1px solid #ddd;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,7 +149,7 @@ border: 1px solid #ddd;
   opacity: 0;
   transform: translateX(0);
   transition: transform 0.5s ease, opacity 0.5s ease;
-  border: 1px solid #ddd;
+
 }
 
 .indicator-container {
@@ -274,7 +274,7 @@ text-align: center;
 .kontainerproject {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
+
   justify-content: center;
   align-items: center;
   width: 100%;
