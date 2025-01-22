@@ -3,101 +3,108 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css?v=1.0">
-<title>Personal Website Alvin</title>
+    <title>Personal Website Alvin</title>
 </head>
 
 <body>
 
-<div class="header">
-    <div class="headersatu">
-        <span class="header1">Personal Website</span>
-    </div>
+<!-- Header Section -->
+<div class="header finisher-header">
+    <div class="header-content">
+        <!-- Semua elemen di bawah ini sekarang menjadi children dari header-content -->
+        <div class="headerone">
+            <div class="headersatu">
+                <span class="header1">Personal Website</span>
+            </div>
 
-    <div class="headerdua">
-        <span class="header2">Alvin Putra Nurtan</span>
-    </div>
-
-
-<div class="container">
-
-    <div class="column education">
-        <h1 class="Edu">Education</h1>
-        <p class="Kampus">Semarang State Polytechnic</p>
-        <p class="Prodi">Bachelor of Applied Technology Engineering of Telecommunication Engineering<br>2023-2027</p>
-        <p class="SMK">Semarang State Vocational High School Number 5</p>
-        <p class="Jurusan">Computer and Network Engineering<br>2020-2023</p>
-    </div>
-
-
-    <div class="column skill">
-        
-        <h1 class="skills">Skills</h1>
-        
-        <div class="item">
-            <p class="CPlus">C++</p>
-            <img src="Media/C++.png" alt="Gambar C++">
+            <div class="headerdua">
+                <span class="header2">Alvin Putra Nurtan</span>
+            </div>
         </div>
 
-        <div class="item">
-            <p class="C">C</p>
-            <img src="Media/C.png" alt="Gambar C">
+        <div class="container">
+            <div class="column education">
+                <h1 class="Edu">Education</h1>
+                <p class="Kampus">Semarang State Polytechnic</p>
+                <p class="Prodi">Bachelor of Applied Technology Engineering of Telecommunication Engineering<br>2023-2027</p>
+                <p class="SMK">Semarang State Vocational High School Number 5</p>
+                <p class="Jurusan">Computer and Network Engineering<br>2020-2023</p>
+            </div>
+
+            <div class="column skill">
+                <h1 class="skills">Skills</h1>
+                <div class="item">
+                    <p class="CPlus">C++</p>
+                    <img src="Media/C++.png" alt="Gambar C++">
+                </div>
+                <div class="item">
+                    <p class="C">C</p>
+                    <img src="Media/C.png" alt="Gambar C">
+                </div>
+                <div class="item">
+                    <p class="Python">Python</p>
+                    <img src="Media/Python.png" alt="Gambar Python">
+                </div>
+                <div class="item">
+                    <p class="FreeRTOS">FreeRTOS</p>
+                    <img src="Media/FreeRTOS.png" alt="Gambar FreeRTOS">
+                </div>
+                <div class="item">
+                    <p class="HTML">HTML</p>
+                    <img src="Media/HTML.png" alt="Gambar HTML">
+                </div>
+                <div class="item">
+                    <p class="CSS">CSS</p>
+                    <img src="Media/CSS.png" alt="Gambar CSS">
+                </div>
+                <div class="item">
+                    <p class="HTML">JavaScript</p>
+                    <img src="Media/JavaScript.png" alt="Gambar JavaScript">
+                </div>
+                <div class="item">
+                    <p class="Linux">Linux</p>
+                    <img src="Media/Linux.png" alt="Gambar Linux">
+                </div>
+                <div class="item">
+                    <p class="Cisco IOS">Cisco IOS</p>
+                    <img src="Media/Cisco IOS.png" alt="Gambar Cisco IOS">
+                </div>
+                <div class="item">
+                    <p class="Mikrotik RouterOS">Mikrotik RouterOS</p>
+                    <img src="Media/Mikrotik RouterOS.png" alt="Gambar Mikrotik RouterOS">
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-            <p class="Python">Python</p>
-            <img src="Media/Python.png" alt="Gambar Python">
+        <div class="Project">
+            <div class="Project1">
+                <p>Project</p>
+            </div>
         </div>
-
-        <div class="item">
-            <p class="FreeRTOS">FreeRTOS</p>
-            <img src="Media/FreeRTOS.png" alt="Gambar FreeRTOS">
-        </div>
-
-        <div class="item">
-            <p class="HTML">HTML</p>
-            <img src="Media/HTML.png" alt="Gambar HTML">
-        </div>
-
-        <div class="item">
-            <p class="CSS">CSS</p>
-            <img src="Media/CSS.png" alt="Gambar CSS">
-        </div>
-
-        <div class="item">
-            <p class="HTML">JavaScript</p>
-            <img src="Media/JavaScript.png" alt="Gambar JavaScript">
-        </div>
-
-        <div class="item">
-            <p class="Linux">Linux</p>
-            <img src="Media/Linux.png" alt="Gambar Linux">
-        </div>
-
-        <div class="item">
-            <p class="Cisco IOS">Cisco IOS</p>
-            <img src="Media/Cisco IOS.png" alt="Gambar Cisco IOS">
-        </div>
-
-        <div class="item">
-            <p class="Mikrotik RouterOS">Mikrotik RouterOS</p>
-            <img src="Media/Mikrotik RouterOS.png" alt="Gambar Mikrotik RouterOS">
-        </div>
-
     </div>
 </div>
 
-
-<div class="Project">
-
-    
-<div class="Project1">
-    <p>Project</p>
-</div>
-
-
-</div>
-
+<!-- Include Finisher Header Script -->
+<script src="finisher-header.es5.min.js"></script>
+<script>
+   // Initialize Finisher Header Animation
+   new FinisherHeader({
+     "count": 100,
+     "size": { "min": 2, "max": 8, "pulse": 0 },
+     "speed": {
+       "x": { "min": 0, "max": 0.1 },
+       "y": { "min": 0, "max": 0.1 }
+     },
+     "colors": {
+       "background": "#201e30",
+       "particles": ["#fbfcca", "#d7f3fe", "#ffd0a7"]
+     },
+     "blending": "overlay",
+     "opacity": { "center": 1, "edge": 0 },
+     "skew": 0,
+     "shapes": ["c"] // Shapes: "c" for circle
+   });
+ </script>
 
 </body>
-
 </html>
