@@ -1,45 +1,82 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #110833;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #201e30;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ddd;
+width: 100%;
+height: auto;  /* Gunakan auto agar tinggi header menyesuaikan dengan kontennya */
+min-height: 300px;  /* Minimum height untuk memastikan header tidak terlalu kecil */
+position: relative;
+overflow: hidden;
+}
+
+.header-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+z-index: 1;
+text-align: center;
+color: white;
+font-size: 2rem;
+padding: 20px 0;  /* Tambahkan sedikit padding untuk ruang yang cukup */
+height: 100%;  /* Pastikan konten memenuhi tinggi header */
+box-sizing: border-box; /* Untuk menghindari overflow */
+}
+
+canvas#finisher-canvas {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+
+/* Styling untuk headerone dan headerdua */
+.headerone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 
 .headersatu {
-    font-size: 8vh;
-    border: 1px solid #ddd;
+  font-size: 8vh;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
 .headerdua {
-    font-size: 5vh;
-    border: 1px solid #ddd;
-    padding-top: 3%;
+  font-size: 5vh;
+  border: 1px solid #ddd;
+  padding-top: 3%;
 }
 
+/* Layout container untuk bagian edukasi dan skills */
 .container {
-  display: flex;            /* Flexbox aktif */
-  flex-direction: row;      /* Default: Kolom bersebelahan */
-  gap: 20px;                /* Jarak antar kolom */
-  padding: 20px;
-  border: 1px solid #ddd;
+display: flex;
+flex-direction: row;
+gap: 20px;
+padding: 20px;
+border: 1px solid #ddd;
 }
 
 .column {
-  flex: 1;                  /* Kolom berbagi ruang secara merata */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+flex: 1;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
 }
 
 .Edu {
@@ -48,38 +85,38 @@ text-align: center;
 }
 
 .Kampus, .SMK {
-  font-size: 4vh;
-  text-align: center;
-  padding-top: 5%;
+font-size: 4vh;
+text-align: center;
+padding-top: 5%;
 }
 
 .Prodi, .Jurusan {
-  font-size: 3vh;
-  text-align: center;
+font-size: 3vh;
+text-align: center;
 }
 
 .skills {
-  font-size: 5vh;
-  text-align: center;
+font-size: 5vh;
+text-align: center;
 }
 
-
-
+/* Styling untuk setiap item di skill section */
 .item {
-  display: flex;            /* Membuat teks dan gambar dalam satu baris */
-  align-items: center;      /* Vertikal rata tengah */
-  gap: 10px;                /* Jarak antara gambar dan teks */
-  margin-bottom: 10px;      /* Jarak antar item */
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 10px;
 }
 
 .item img {
-  width: auto;              /* Ukuran gambar */
-  height: 6vh;
-  margin-left: 2%;
+width: auto;
+height: 6vh;
+margin-left: 2%;
 }
 
+/* Responsif untuk tampilan kecil */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Kolom disusun ke bawah */
-  }
+.container {
+  flex-direction: column;
+}
 }
