@@ -323,7 +323,6 @@ text-align: center;
 .PageBreak1 {
   display: block; /* Tampilkan elemen */
   text-align: center; /* Opsional: Untuk memusatkan konten */
-  margin-bottom: 10px; /* Opsional: Beri jarak dengan elemen berikutnya */
 }
 
 .PageBreak1 img {
