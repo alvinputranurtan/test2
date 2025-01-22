@@ -60,6 +60,23 @@ z-index: 0;
   padding-top: 3%;
 }
 
+.headertiga img{
+  width: auto;
+  height: 30vh;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20%;
+}
+
+.PageBreak img{
+  width: 60%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: -50%;
+}
+
 /* Layout container untuk bagian edukasi dan skills */
 .container {
 display: flex;
@@ -183,7 +200,7 @@ padding-bottom: -10%;
 
 .Project1 img {
   width: auto;
-  width: 100%;
+  width: 70%;
 }
 
 .ContainerButton {
@@ -196,7 +213,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     margin: 10px;
-    background-color: #3498db;
+    background-color: #2424d8;
     color: white;
     border: none;
     border-radius: 5px;
@@ -205,11 +222,11 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #8888ff;
 }
 
-button:hover {
-  background-color: #2980b9;
+button:active {
+  background-color: #aaaaff;
 }
 
 /* Efek fade-out dan pergeseran ke kiri */
@@ -290,6 +307,8 @@ text-align: center;
 .indicator-container {
   margin-top: 0%;
 }
+
+
 
 
 /* Responsif untuk tampilan kecil */
