@@ -47,19 +47,16 @@ z-index: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ddd;
   margin-bottom: 20px;
 }
 
 .headersatu {
   font-size: 5vh;
-  border: 1px solid #ddd;
   padding: 10px;
 }
 
 .headerdua {
   font-size: 3vh;
-  border: 1px solid #ddd;
   padding-top: 3%;
 }
 
@@ -69,15 +66,16 @@ display: flex;
 flex-direction: row;
 gap: 20px;
 padding: 20px;
-border: 1px solid #ddd;
+
+width: 100%;
 }
 
 .column {
 flex: 1;
-padding: 20px;
-border: 1px solid #ddd;
 border-radius: 8px;
+text-align: center;
 }
+
 
 .Edu {
 font-size: 3.5vh;
@@ -100,20 +98,173 @@ font-size: 3.5vh;
 text-align: center;
 }
 
+.Project {
+font-size: 3.5vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+padding: 1%;
+}
+
+.DescProject {
+  font-size: 2vh;
+}
+
+.BentukProject {
+  display: flex;
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center;     /* Memusatkan secara vertikal */
+  position: relative;
+  height: 100vh;  /* Memastikan tinggi container full screen */
+  overflow: hidden;
+  font-size: 2.5vh;
+  flex: 1;
+  padding: 1%;
+  transition: all 0.5s ease;
+}
+
+.Project1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+
+/* Saat box aktif (ditampilkan), pastikan berada di tengah */
+.Project1.fade-in {
+  opacity: 1;
+  transform: translateX(0); /* Reset posisi ke tengah */
+  z-index: 10;             /* Pastikan box terlihat di atas */
+}
+
+.Project1 img {
+  width: auto;
+  height: 25vh;
+  margin-bottom: 5%;
+}
+
+.ContainerButton {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Efek fade-out dan pergeseran ke kiri */
+.fade-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Efek fade-out dan pergeseran ke kanan */
+.fade-out-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Efek fade-in untuk box yang baru tampil */
+.fade-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /* Styling untuk setiap item di skill section */
 .item {
 display: flex;
 align-items: center;
-gap: 10px;
-margin-bottom: 10px;
+gap: 0.5%;
+text-align: center;
 font-size: 2.5vh;
+justify-content: center;
+margin: -2%;
 }
 
 .item img {
 width: auto;
 height: 4vh;
 margin-left: 2%;
+align-items: center;
+text-align: center;
 }
+
+.About {
+  margin-top: 160%;
+}
+
+.AboutLink {
+  font-size: 3vh;
+}
+
+.AboutLink a {
+  text-decoration: none; /* Menghilangkan underline */
+  color: white; /* Warna teks putih secara default */
+  transition: color 0.3s ease; /* Transisi halus pada perubahan warna */
+}
+
+.AboutLink a:active {
+  color: gray; /* Warna teks abu-abu saat diklik */
+}
+
+.AboutLink a:hover {
+  text-decoration: underline; /* Menambahkan underline saat hover (opsional) */
+}
+
+.TulisanProject {
+  margin-top: 150%;
+  margin-bottom: -80%;
+}
+
+
+.indicator-container {
+  margin-top: -1%;
+}
+
 
 /* Responsif untuk tampilan kecil */
 @media (max-width: 768px) {
