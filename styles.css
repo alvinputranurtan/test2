@@ -58,14 +58,20 @@ canvas#finisher-canvas {
 .headerdua {
   font-size: 3vmax;
   padding-top: 3%;
+  padding-bottom: 5%;
 }
 
 .headertiga img{
   width: auto;
-  height: 30vmax;
+  height: 20vmax;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 20%;
+  justify-content: center;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.headertiga img:hover {
+  transform: scale(1.05);
 }
 
 .PageBreak img{
@@ -131,6 +137,11 @@ canvas#finisher-canvas {
   margin-left: 2%;
   align-items: center;
   text-align: center;
+  transition: height 0.3s ease;
+}
+
+.item img:hover {
+  height: 6vh
 }
 
 .kontainerproject {
@@ -153,10 +164,9 @@ canvas#finisher-canvas {
 
 .TulisanProject {
   font-size: 3vmax;
-  border: 4px solid #00ffff;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 
 .BentukProject {
@@ -169,7 +179,6 @@ canvas#finisher-canvas {
   padding: 1%;
   transition: all 0.5s ease;
   width: 100%;
-  border: 4px solid #ff00ff;
   margin-top: -20%;
 }
 
@@ -183,7 +192,6 @@ canvas#finisher-canvas {
   opacity: 0;
   transform: translateX(0);
   transition: transform 0.5s ease, opacity 0.5s ease;
-  border: 4px solid #ffffff;
 }
 
 /* Saat box aktif (ditampilkan), pastikan berada di tengah */
@@ -218,19 +226,16 @@ canvas#finisher-canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 4px solid #ffff00;
 }
 
 .Project1 img {
   width: auto;
   width: 22vmax;
-  border: 4px solid #ffffff;
 }
 
 .DescProject {
-  font-size: 1.5vmax;
-  width: 180%;
-  border: 4px solid #9999ff;
+  font-size: 1.2vmax;
+  width: 200%;
 }
 
 .indicator-container {
@@ -284,10 +289,17 @@ button:active {
 
 .About {
   margin-top: 160%;
+  font-size: 3vmax;
 }
 
 .AboutLink {
-  font-size: 3vh;
+  font-size: 2vmax;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.AboutLink:hover {
+  transform: scale(1.15);
 }
 
 .AboutLink a {
