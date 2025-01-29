@@ -286,7 +286,7 @@ canvas#finisher-canvas {
 button {
   padding-top: 0.5vmax;
   padding-bottom: 0.5vmax;
-  font-size: 1.2vmax;
+  font-size: clamp(1.8vh, 1.2vmax, 3vh);
   margin: 1vmax;
   background-color: #2424d8;
   color: white;
