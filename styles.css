@@ -66,6 +66,7 @@ canvas#finisher-canvas {
   height: 20vmax;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
   transform: scale(1);
   transition: transform 0.3s ease;
 }
@@ -111,7 +112,7 @@ canvas#finisher-canvas {
 .Kampus, .SMK {
  font-size: 3vmax;
  text-align: center;
- padding-top: 10%;
+ margin-top: 10%;
 }
 
 .Prodi, .Jurusan {
@@ -119,6 +120,17 @@ canvas#finisher-canvas {
  text-align: center;
  margin-top: -1%;
 }
+
+.headerskill {
+  font-size: 2.5vmax;
+  margin-top: 7.5%;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+
+.CPlus, .C, .Python, .FreeRTOS, .HTML, .CSS, .JavaScript, .Linux, .CiscoIOS, .MikrotikRouterOS {
+  font-size: 2vmax;
+} 
 
 /* Styling untuk setiap item di skill section */
 .item {
@@ -133,15 +145,18 @@ canvas#finisher-canvas {
   
 .item img {
   width: auto;
-  height: 4vh;
+  height: 4vmax;
   margin-left: 2%;
   align-items: center;
   text-align: center;
-  transition: height 0.3s ease;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));
 }
 
 .item img:hover {
-  height: 6vh
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
 }
 
 .kontainerproject {
@@ -231,6 +246,7 @@ canvas#finisher-canvas {
 .Project1 img {
   width: auto;
   width: 22vmax;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
 }
 
 .DescProject {
@@ -252,13 +268,13 @@ canvas#finisher-canvas {
   background-color: gray;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transform: scale(1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .indicator.active {
   background-color: white;
-  width: 0.85vmax;
-  height: 0.85vmax;
+  transform: scale(1.2);
 }
 
 .ContainerButton {
@@ -269,7 +285,7 @@ canvas#finisher-canvas {
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1vmax;
   margin: 10px;
   background-color: #2424d8;
   color: white;
@@ -277,6 +293,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
+  width: 9vmax;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
