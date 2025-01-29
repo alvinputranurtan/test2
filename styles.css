@@ -285,7 +285,7 @@ canvas#finisher-canvas {
 
 button {
   padding: 10px 20px;
-  font-size: 1vmax;
+  font-size: 1.2vmax;
   margin: 10px;
   background-color: #2424d8;
   color: white;
@@ -293,7 +293,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  width: 9vmax;
+  width: 15vmax;
   transition: background-color 0.3s ease;
 }
 
