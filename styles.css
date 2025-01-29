@@ -66,7 +66,7 @@ canvas#finisher-canvas {
   height: 20vmax;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
   transform: scale(1);
   transition: transform 0.3s ease;
 }
@@ -151,7 +151,7 @@ canvas#finisher-canvas {
   text-align: center;
   transform: scale(1);
   transition: transform 0.3s ease;
-  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 .item img:hover {
@@ -246,7 +246,7 @@ canvas#finisher-canvas {
 .Project1 img {
   width: auto;
   width: 22vmax;
-  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 .DescProject {
@@ -284,13 +284,14 @@ canvas#finisher-canvas {
 }
 
 button {
-  padding: 10px 20px;
+  padding-top: 0.5vmax;
+  padding-bottom: 0.5vmax;
   font-size: 1.2vmax;
-  margin: 10px;
+  margin: 1vmax;
   background-color: #2424d8;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20vmax;
   cursor: pointer;
   display: inline-block;
   width: 15vmax;
